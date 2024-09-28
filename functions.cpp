@@ -182,3 +182,9 @@ void Queue::printQueue() {
         }
     }
 }
+
+int Queue::peek() {
+    if(front)
+       return front->getData();
+    return -1;
+}
